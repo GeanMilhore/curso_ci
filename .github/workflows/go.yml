@@ -12,7 +12,8 @@ on:
 jobs:
 
   test:
-    runs-on: ['ubuntu-22.04','ubuntu-latest']
+    runs-on: 
+      group: ubuntu-runners
     strategy:
       matrix:
         go_version: ['1.19', '1.18', '>=1.19']
